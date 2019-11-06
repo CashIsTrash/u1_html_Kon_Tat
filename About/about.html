@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <!-- View Port to make it responsive -->
-    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name = "description" content="Shoes store">
     <!--  Search Engine Optimization  --> 
@@ -11,30 +10,45 @@
     <meta name="author" content ="Konstantinos Tatsis">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Fashion Shoes | Welcome</title>
-    <link rel="stylesheet" href="./css/style.css">
+   
+    <link rel="stylesheet" href="../About/about-style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+ 
 </head>
-
-
-
 <body>
-    <div id="body-about">
-    <header>
+
+    <header id="regular-menu">
+
+            <div class="nav">
+                    <label for="toggle">&#9776;</label>
+                    <br>
+                    <input type="checkbox" id="toggle"/>
+                    <div class="menu">   
+                        <li class="current"><a href="../Index/index.html">Home</a> </li>
+                        <li><a href="../Gallery/gallery.html">Gallery</a>  </li>
+                        <li><a href="../Contact/contact.html">Contact</a>  </li>     
+                        <li><a href="../About/about.html">About</a>  </li>  
+                    </div>      
+                </div>
+
         <div class="container">  
+        <div class="mobile-container">            
             <div id="brand">
                 <h1><span class="highlight">CZ</span>shoes</h1>
             </div> 
-            <nav>
-                <ul>
-                    <li class="current"><a href="index.html">Home</a> </li>
-                    <li><a href="gallery.html">Gallery</a>  </li>
-                    <li><a href="contact.html">Contact</a>  </li>     
-                    <li><a href="about.html">About</a>  </li>  
+          
+                <nav id="large-screen">
+                <ul id="myLinks">
+                    <li class="current"><a href="../Index/index.html">Home</a> </li>
+                    <li><a href="../Gallery/gallery.html">Gallery</a>  </li>
+                    <li><a href="../Contact/contact.html">Contact</a>  </li>     
+                        <li><a href="../About/about.html">About</a>  </li>  
                 </ul>
             </nav>
+           
+        </div>
         </div>
     </header>
-
-
 
     <section id="showcase">
         <div class="container">
@@ -64,40 +78,49 @@
             <br>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas viverra congue nisl, sit amet accumsan mi. Duis vel elit feugiat, pretium diam vel, tempus mauris. Donec facilisis malesuada nibh a rutrum. Integer in ligula et enim bibendum vehicula sed ut diam. Duis lobortis nunc tortor, accumsan hendrerit libero condimentum ac. Aliquam metus nunc, eleifend sed purus et, mollis aliquam erat. Quisque commodo maximus ligula, et posuere leo scelerisque vel. Integer molestie auctor purus sed ornare. Fusce volutpat eleifend felis, at aliquet ex tempor sit amet. Curabitur sed velit vitae justo mattis interdum ut eu ligula. Ut aliquam ut lacus sit amet porttitor. Pellentesque nunc ante, mattis id varius a, consequat quis nibh. Sed porttitor tristique mauris, id placerat dolor gravida vel.
              </p>
+             
        </div>
    </section>
 
-    <footer>
-        <div class="container">
-            <div id="copyright">
-                <p>CZShoes Copyright &copy; 2019  </p>
-            </div>
+   <footer>
+    <div class="container">
+    <div class="flex-container-footer">
 
-            <div id="address">
-                    <address>
-                            Växjö Framtidsvägen 10A, 352 26<br>
+    <!-- <div class="row">  -->
+            
+       <!-- <div class="col-sm-4">  -->
+       <div id="logo-frame">
+            <div class="mapouter"><div class="gmap_canvas"><iframe width="300" height="110" id="gmap_canvas" src="https://maps.google.com/maps?q=Sweden%20v%C3%A4xj%C3%B6%20%20framtidsv%C3%A4gen%2010A&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><style></style></div>
+        <!-- </div> -->
+        </div> 
+   
+            <div class="address">
+                <address>
+                        Växjö Framtidsvägen 10A, 352 26<br>
                         &nbsp &nbsp &nbsp &nbsp &nbsp  Tel: 073 12 55 666<br>
-                        
-                        </address>
-                </div>
-    
-
-            <div id="logo">
-                    <a href="https://instagram.com"  alt="Instagram"> 
-                    <img src="./img/insta.png">
-                    </a>
-                    
-                    <a href="https://facebook.com" alt="Facebook"> 
-                    <img src="./img/face.png">
-                     </a>
+                        <p id="copyright">CZShoes Copyright &copy; 2019  </p>
+                    </address>
+            <!-- </div> -->
             </div>
-                
-                <div id="logo-frame">
-                    <div class="mapouter"><div class="gmap_canvas"><iframe width="300" height="110" id="gmap_canvas" src="https://maps.google.com/maps?q=Sweden%20v%C3%A4xj%C3%B6%20%20framtidsv%C3%A4gen%2010A&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><style></style></div>
-                </div>
+        
+        <!-- <div class="col-sm-4">             -->
+        <div id="logo">
+                <span id="insta-1"></span>
+                <a href="https://instagram.com"  alt="Instagram"> 
+                <img src="../img/insta.png">
+                </a>
+
+                <span id="face-1"></span>
+                <a href="https://facebook.com" alt="Facebook"> 
+                <img src="../img/face.png">
+                 </a>
+        <!-- </div> -->
+        </div>
+            
+            
+        <!-- </div> -->
+        </div>
         </div>
     </footer>
-
-</div>
 </body>
 </html>

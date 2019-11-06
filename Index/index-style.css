@@ -1,0 +1,276 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5; /* SPACE BETWEEN EACH ROW*/
+    /* CTRL + K + U TO GENERATE COMMENT SHORTCUT */
+    /* SAMMA DEKLARATION SOM UPPÅT */
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    background: #35424a;
+}
+/* Global */
+.container{
+    width: 80%; /*SÄTTER DEN PÅ % FÖR ATT DEN SKA VARA RESPOSIVT*/
+    margin: auto;  /*ALLA INNEHÅLLET FLYTTAR MOT CENTRUMET*/
+    overflow: hidden; /* The overflow is clipped, and the rest of the content will be invisible*/
+}
+
+/* Header Header Header Header Header Header Header Header Header Header Header */
+header{
+    background: #35424a;
+    color: #ffff; 
+    padding-top: 30px;
+    min-height: 70px; /*När det är responsivt och skärmen är små och texten går mot andra radden, heigth ska anpassas.*/
+    border-bottom: #e8491d 3px solid;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+header a{
+    color: #ffffff;
+    text-decoration: none; /* Länkar har ett understreck automatiskt, det tas bort understrecken! */
+    text-transform: uppercase;
+    font-size: 16px;
+   
+   
+}
+
+header li{
+    display: inline;
+    padding: 0 20px 0 20px;
+    
+}
+
+header #brand{
+    float: left;
+}
+
+header nav{
+    float: right;
+    margin-top: 15px;
+}
+
+header .highlight{
+    color: #e8491d;
+    font-weight: bold;
+}
+
+header a:hover{
+    color: #e8491d;
+    font-weight: bold;
+    
+}
+/* Header Header Header Header Header Header Header Header Header Header Header */
+/* SHOWCASE */ /* SHOWCASE */ /* SHOWCASE */ /* SHOWCASE */ /* SHOWCASE */ /* SHOWCASE */
+#showcase{
+    min-height: 475px;  /*Min height ska vara 475px*/
+    background:url('../img/Shoe_banner.jpg ') no-repeat 0 -400px;   
+    text-align: center;
+    color: #ffffff;
+}
+
+#showcase h1{
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#showcase p{
+    font-size: 20px; 
+}
+/* SHOWCASE */ /* SHOWCASE */ /* SHOWCASE */ /* SHOWCASE */ /* SHOWCASE */ /* SHOWCASE */
+/*Newsletter*/ /*Newsletter*/ /*Newsletter*/ /*Newsletter*/ /*Newsletter*/
+#newsletter{
+    padding: 15px;
+    color: #ffffff;
+    background: #35424a;
+}
+
+#newsletter h1{
+    float: left;
+}
+
+#newsletter form{
+    float: right;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#newsletter input[type="email"]{
+    padding: 4px;
+    height: 35px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    resize: vertical;
+}
+
+.button_1{
+    height: 38px;
+    background: #e8491d;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+}
+#newsletter .button_1:hover{
+    background: #11ff45;
+}
+/*Newsletter*/ /*Newsletter*/ /*Newsletter*/ /*Newsletter*/ /*Newsletter*/
+/* INDEX HOME INDEX HOME INDEX HOME INDEX HOME INDEX HOME INDEX HOME INDEX HOME INDEX HOME INDEX HOME INDEX HOME */
+.flex-container {
+    background-color:#f4f4f4 ;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;  
+    justify-content: center;
+
+}
+
+.flex-container  div{
+    margin: 30px 120px 0 120px;
+}
+
+.pic-margin-down{
+    padding: 20px
+}
+/* INDEX HOME INDEX HOME INDEX HOME INDEX HOME INDEX HOME INDEX HOME INDEX HOME INDEX HOME INDEX HOME INDEX HOME */
+
+/* FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER   */
+footer{
+    width: 100%; 
+    height: 100%;
+    position: sticky;
+    min-height: 70px; /*När det är responsivt och skärmen är små och texten går mot andra radden, heigth ska anpassas.*/
+    border-top: #e8491d 6px solid;
+    color: #ffffff;
+    background: #35424a;
+    padding-top: 1%;
+}
+
+.flex-container-footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flex-container-footer > div{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+
+.flex-container-footer #face-1{
+    padding-left: 30px;
+}
+
+.flex-container-footer #copyright{
+    padding-left: 20px;
+}
+
+@media screen and (min-width: 1191px) {
+    header .nav{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1190px) {
+    header .nav{
+        display: none;
+    }
+    /* background-color: red; */
+    
+    .flex-container-footer .address{
+        order: 3;
+        padding-left: 35%;
+        }
+}
+/* För att footer ska visas fint! För att footer ska visas fint! För att footer ska visas fint! */
+@media screen and (max-width: 868px) {
+header .nav{
+        display: none;  
+    }
+
+footer{    
+    padding-top: 1%;
+    /* background-color: yellow; */
+}
+
+.flex-container-footer {
+    order: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-container-footer .address{
+    order: 3;
+    padding-left: 0;
+    }
+
+}
+
+/* För att footer ska visas fint! För att footer ska visas fint! För att footer ska visas fint! */
+/* HAMBURGARE MENY HAMBURGARE MENY HAMBURGARE MENY HAMBURGARE MENY HAMBURGARE MENY HAMBURGARE MENY   */
+@media screen and (max-width: 760px) {
+header .container{
+    display: none;
+}
+
+header .nav{
+    display: block;
+    text-decoration-color: white;
+    text-align: right;
+}
+header .menu {
+    display: none;
+}
+header .menu li{
+    clear: right;
+    text-decoration: none;
+    color: white;
+    align-content: center;
+}
+header label{
+    margin-left: 8%;
+    font-size: 26px;
+    display: none;
+    width: 26px;
+    float: left;
+}
+
+header #toggle{
+    display: none;
+}
+header label{
+    display: inline;
+    cursor: pointer;
+}
+
+header .menu{
+    text-align: center;
+    width: 100%;
+    display: none;
+}
+
+header .menu a{
+    display: block;
+    border-bottom: 1px solid #EAEAEB;
+}
+
+header #toggle:checked + .menu{
+    display: block;
+}
+}
+/* HAMBURGARE MENY HAMBURGARE MENY HAMBURGARE MENY HAMBURGARE MENY HAMBURGARE MENY HAMBURGARE MENY   */
+
+
+
